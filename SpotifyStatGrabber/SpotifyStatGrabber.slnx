@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="spotifystatgrabber.client/spotifystatgrabber.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="SpotifyStatGrabber.Server/SpotifyStatGrabber.Server.csproj" />
+</Solution>

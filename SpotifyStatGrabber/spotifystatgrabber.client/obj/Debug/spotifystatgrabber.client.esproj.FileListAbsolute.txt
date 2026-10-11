@@ -1,0 +1,1 @@
+C:\Users\Elayne\source\repos\SpotifyStatGrabber\SpotifyStatGrabber\spotifystatgrabber.client\obj\Debug\spotifystatgrabber.client.esproj.CoreCompileInputs.cache

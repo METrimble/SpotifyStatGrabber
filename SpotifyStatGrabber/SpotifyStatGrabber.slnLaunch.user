@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "spotifystatgrabber.client\\spotifystatgrabber.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

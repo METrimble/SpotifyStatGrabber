@@ -1,0 +1,6 @@
+@SpotifyStatGrabber.Server_HostAddress = http://localhost:5220
+
+GET {{SpotifyStatGrabber.Server_HostAddress}}/api/
+Accept: application/json
+
+###
