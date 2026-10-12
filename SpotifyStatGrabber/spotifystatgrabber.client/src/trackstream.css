@@ -1,0 +1,8 @@
+.track-stream-table {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+.track-stream-table th, td{
+    border: 1px solid;
+}
