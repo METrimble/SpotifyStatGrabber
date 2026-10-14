@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\spotifystatgrabber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\spotifystatgrabber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\controllers\\trackstreamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\controllers\\trackstreamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\trackstream.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\trackstream.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\spotifystatgrabberhome.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\spotifystatgrabberhome.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\trackstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\trackstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\fullsite.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\fullsite.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\trackstreamlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\trackstreamlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CCFBB02C-E84A-26DB-53D6-E694C0077241}|SpotifyStatGrabber.Server\\SpotifyStatGrabber.Server.csproj|solutionrelative:spotifystatgrabber.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|c:\\users\\elayne\\source\\repos\\spotifystatgrabber\\spotifystatgrabber\\spotifystatgrabber.client\\src\\uploadzip.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{08011A51-024F-1162-A83E-BC7385F5D857}|spotifystatgrabber.client\\spotifystatgrabber.client.esproj|solutionrelative:spotifystatgrabber.client\\src\\uploadzip.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrackStream.cs",
-              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\TrackStream.cs",
-              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\TrackStream.cs",
-              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\TrackStream.cs",
-              "RelativeToolTip": "SpotifyStatGrabber.Server\\TrackStream.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T04:19:35.7Z",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\appsettings.json",
+              "RelativeToolTip": "SpotifyStatGrabber.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-14T05:02:07.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "fullsite.css",
-              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\fullsite.css",
-              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\fullsite.css",
-              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\fullsite.css",
-              "RelativeToolTip": "spotifystatgrabber.client\\src\\fullsite.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-12T03:52:13.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "trackstream.css",
-              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\trackstream.css",
-              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\trackstream.css",
-              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\trackstream.css",
-              "RelativeToolTip": "spotifystatgrabber.client\\src\\trackstream.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-12T03:30:31.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Program.cs",
               "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\Program.cs",
               "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Program.cs",
               "RelativeToolTip": "SpotifyStatGrabber.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-11T03:08:02.974Z",
+              "WhenOpened": "2026-10-14T04:53:30.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrackStreamController.cs",
-              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
-              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
-              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
-              "RelativeToolTip": "SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-11T00:50:27.314Z",
+              "DocumentIndex": 7,
+              "Title": "UploadZip.jsx",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\UploadZip.jsx",
+              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\UploadZip.jsx",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\UploadZip.jsx",
+              "RelativeToolTip": "spotifystatgrabber.client\\src\\UploadZip.jsx",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-10-14T04:17:32.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SpotifyStatGrabberHome.jsx",
-              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\SpotifyStatGrabberHome.jsx",
-              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\SpotifyStatGrabberHome.jsx",
-              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\SpotifyStatGrabberHome.jsx",
-              "RelativeToolTip": "spotifystatgrabber.client\\src\\SpotifyStatGrabberHome.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Title": "TrackStreamList.jsx",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\TrackStreamList.jsx",
+              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\TrackStreamList.jsx",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\TrackStreamList.jsx",
+              "RelativeToolTip": "spotifystatgrabber.client\\src\\TrackStreamList.jsx",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwF8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-11T01:14:38.36Z",
+              "WhenOpened": "2026-10-14T04:17:31.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\main.jsx",
+              "RelativeDocumentMoniker": "spotifystatgrabber.client\\src\\main.jsx",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\spotifystatgrabber.client\\src\\main.jsx",
+              "RelativeToolTip": "spotifystatgrabber.client\\src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-10-14T04:17:28.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrackStreamController.cs",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
+              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
+              "RelativeToolTip": "SpotifyStatGrabber.Server\\Controllers\\TrackStreamController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowC4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T03:39:32.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpotifyStatGrabber.cs",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\SpotifyStatGrabber.cs",
+              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\SpotifyStatGrabber.cs",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\SpotifyStatGrabber.cs",
+              "RelativeToolTip": "SpotifyStatGrabber.Server\\SpotifyStatGrabber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T03:38:15.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrackStream.cs",
+              "DocumentMoniker": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\TrackStream.cs",
+              "RelativeDocumentMoniker": "SpotifyStatGrabber.Server\\TrackStream.cs",
+              "ToolTip": "C:\\Users\\Elayne\\source\\repos\\SpotifyStatGrabber\\SpotifyStatGrabber\\SpotifyStatGrabber.Server\\TrackStream.cs",
+              "RelativeToolTip": "SpotifyStatGrabber.Server\\TrackStream.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T03:38:14.566Z",
               "EditorCaption": ""
             }
           ]

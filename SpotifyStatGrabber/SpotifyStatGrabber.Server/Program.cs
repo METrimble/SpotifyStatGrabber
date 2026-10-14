@@ -1,8 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using SpotifyStatGrabber.Server;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var configuration = builder.Configuration;
+builder.Services.AddDbContext<SpotifyStatGrabberContext>(options =>
+		options.UseSqlite(configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging());
 
 builder.Services.AddControllers();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();

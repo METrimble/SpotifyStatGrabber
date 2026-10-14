@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpotifyStatGrabber.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+197cf15462ec7a2fd5ed5222a1675f48d86494e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+443669c756517993358ec5a97e8daf6e653a068c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpotifyStatGrabber.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpotifyStatGrabber.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
