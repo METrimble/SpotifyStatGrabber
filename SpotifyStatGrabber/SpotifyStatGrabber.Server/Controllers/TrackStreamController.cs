@@ -23,24 +23,41 @@ namespace SpotifyStatGrabber.Server.Controllers
 			return new JsonResult(await _context.TrackStreams.ToListAsync());
 		}
 
-		[HttpPost()]
-		public async void LoadTrackStreams([FromForm] IFormFile File)
+		[HttpGet()]
+		public async Task<IActionResult> GetTrackStreamCount()
 		{
-			Debug.WriteLine("In POST call" + File.Name);
+			return new JsonResult(_context.TrackStreams.Count());
+		}
+
+		[HttpPost()]
+		public async Task<IActionResult> LoadTrackStreams([FromForm] IFormFile file)
+		{
+			// Check file
+			if (file == null || file.Length == 0) return new JsonResult(0); ;
+
+			// Replacing data if exists
+			if (_context.TrackStreams.Count() > 0)
+			{
+				_context.TrackStreams.ExecuteDelete();
+			}
 
 			List<TrackStream> trackStreams = new List<TrackStream>();
 
-			using (ZipArchive spotifyExtendedStreamHistoryZip = ZipFile.OpenRead("../../my_spotify_data.zip"))
+			using (Stream zipStream = file.OpenReadStream())
 			{
-				foreach (ZipArchiveEntry entry in spotifyExtendedStreamHistoryZip.Entries)
+				using (ZipArchive spotifyExtendedStreamHistoryZip = new ZipArchive(zipStream))
 				{
-					if (entry.FullName.Contains("Streaming_History_Audio_") && entry.FullName.Contains(".json"))
+					foreach (ZipArchiveEntry entry in spotifyExtendedStreamHistoryZip.Entries)
 					{
-						using (Stream stream = entry.Open())
-						using (StreamReader r = new StreamReader(stream))
+						if (entry.FullName.Contains("Streaming_History_Audio_", StringComparison.OrdinalIgnoreCase) && 
+							entry.FullName.Contains(".json", StringComparison.OrdinalIgnoreCase))
 						{
-							string json = r.ReadToEnd();
-							trackStreams.AddRange(JsonConvert.DeserializeObject<List<TrackStream>>(json));
+							using (Stream stream = entry.Open())
+							using (StreamReader r = new StreamReader(stream))
+							{
+								string json = r.ReadToEnd();
+								trackStreams.AddRange(JsonConvert.DeserializeObject<List<TrackStream>>(json));
+							}
 						}
 					}
 				}
@@ -48,7 +65,8 @@ namespace SpotifyStatGrabber.Server.Controllers
 
 			// Set the DB
 			_context.TrackStreams.AddRange(trackStreams);
-			await _context.SaveChangesAsync();
+			int insertedStreams = await _context.SaveChangesAsync();
+			return new JsonResult(insertedStreams);
 		}
 	}
 }

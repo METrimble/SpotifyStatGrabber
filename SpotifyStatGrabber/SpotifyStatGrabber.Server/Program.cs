@@ -20,6 +20,26 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.MapStaticAssets();
 
+using (var scope = app.Services.CreateScope())
+{
+	var services = scope.ServiceProvider;
+	try
+	{
+		var context = services.GetRequiredService<SpotifyStatGrabberContext>();
+
+		// This checks if the file exists. If not, it creates the .db file and all tables.
+		//context.Database.EnsureCreated();
+
+		// ALTERNATIVE (If you are using EF Core Migrations):
+		context.Database.Migrate(); 
+	}
+	catch (Exception ex)
+	{
+		var logger = services.GetRequiredService<ILogger<Program>>();
+		logger.LogError(ex, "An error occurred creating the SQLite database.");
+	}
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -38,5 +58,11 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapFallbackToFile("/index.html");
+
+app.MapGet("/api/isserverready", () =>
+{
+	// Checks to see when the server is live
+	return Results.Ok();
+});
 
 app.Run();
