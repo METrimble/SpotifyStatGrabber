@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System.Diagnostics;
 using System.IO.Compression;
 
 namespace SpotifyStatGrabber.Server.Controllers
@@ -12,17 +11,20 @@ namespace SpotifyStatGrabber.Server.Controllers
 	{
 		private readonly SpotifyStatGrabberContext _context;
 
+		// Set the DB context
 		public TrackStreamController(SpotifyStatGrabberContext context)
 		{
 			_context = context;
 		}
 
+		// Get all TrackStreams 
 		[HttpGet()]
 		public async Task<IActionResult> GetTrackStreams()
 		{
 			return new JsonResult(await _context.TrackStreams.ToListAsync());
 		}
 
+		// Get the count of TrackStreams
 		[HttpGet()]
 		public async Task<IActionResult> GetTrackStreamCount()
 		{
@@ -43,15 +45,19 @@ namespace SpotifyStatGrabber.Server.Controllers
 
 			List<TrackStream> trackStreams = new List<TrackStream>();
 
+			// Open Zip
 			using (Stream zipStream = file.OpenReadStream())
 			{
 				using (ZipArchive spotifyExtendedStreamHistoryZip = new ZipArchive(zipStream))
 				{
+					// For each file in the Spotify Zip
 					foreach (ZipArchiveEntry entry in spotifyExtendedStreamHistoryZip.Entries)
 					{
+						// Use standard naming given in Spotify Zip - only pull json files
 						if (entry.FullName.Contains("Streaming_History_Audio_", StringComparison.OrdinalIgnoreCase) && 
 							entry.FullName.Contains(".json", StringComparison.OrdinalIgnoreCase))
 						{
+							// Reach the Json file and convert to a TrackStream object
 							using (Stream stream = entry.Open())
 							using (StreamReader r = new StreamReader(stream))
 							{
@@ -63,17 +69,12 @@ namespace SpotifyStatGrabber.Server.Controllers
 				}
 			}
 
-			// Set the DB
+			// Populate DB with Streams
 			_context.TrackStreams.AddRange(trackStreams);
 			int insertedStreams = await _context.SaveChangesAsync();
+
+			// Return the count of streams we populated 
 			return new JsonResult(insertedStreams);
 		}
 	}
 }
-
-
-// we will need to read the zip 
-// find zip
-// open
-// go through every file in the folder with .json file type and "streaming_history_audio_.....json"
-// append onto the trackstreams list

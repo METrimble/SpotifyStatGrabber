@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 function UploadZip() {
     const [selectedZip, setSelectedZip] = useState(null);
     const [uploadedStreamsCount, setUploadedStreamsCount] = useState(0);
     const [currentTrackStreamCount, setCurrentTrackStreamCount] = useState(0);
     const [isServerReady, setIsServerReady] = useState(false);
-    const [isloading, setIsLoading] = useState(true);
+    const [serverIsloading, setServerIsLoading] = useState(true);
     const [unableToLoad, setUnableToLoad] = useState(false);
+    const [populatingStreams, setPopulatingStreams] = useState(false);
     const maxRetryAttempts = 20; // Timeout after 40s
 
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -15,17 +17,18 @@ function UploadZip() {
     // Make sure server is ready for the application
     useEffect(() => {
         let retryAttempts = 0;
+        let localIsServerReady = isServerReady;
 
         const pollServer = async () => {
-            setIsLoading(true);
-            while (!isServerReady && retryAttempts <= maxRetryAttempts) {
-                checkServer();
+            setServerIsLoading(true);
+            while (!localIsServerReady && retryAttempts <= maxRetryAttempts) {
+                localIsServerReady = await checkServer();
 
                 console.log("retry attmept: ", retryAttempts);
                 retryAttempts = retryAttempts + 1;
                 await delay(2000); // 2 second delay
             }
-            setIsLoading(false);
+            setServerIsLoading(false);
         }
 
         const couldNotLoadServer = async () => {
@@ -60,31 +63,44 @@ function UploadZip() {
         populateTrackStreams(formData);
     };
 
-    // Returns html to build the page
-    if (isloading) {
+    // If server is still mounting
+    if (serverIsloading) {
         return <div><p>Server is loading.... </p></div>
     }
+    // Server error or timeout
     else if (unableToLoad) {
-        return <div><p>Server polling timed-out, please try refreshing the page.</p></div>
+        return <div><p>Server timed-out, please try refreshing the page.</p></div>
     }
+    // Server is up
     else {
         return (
+            <div>
             <div>
                 <p>Current Stream Count: {currentTrackStreamCount}</p>
                 <div>
                     <input type="file" accept=".zip" onChange={onFileChange} ></input>
                     <button onClick={onFileUpload}>Upload Spotify Extended Streaming History Zip</button>
                 </div>
-                <p>Uploaded Streams: {uploadedStreamsCount}</p>
-                <Link to="/trackstreamlist">All Stream Data</Link>
+                {populatingStreams ? <p>Reading zip file...</p> : <p>Uploaded Streams: {uploadedStreamsCount}</p>}
             </div>
-
+            
+                <Navbar>
+                    <Container>
+                        <Navbar.Brand>Spotify Stat Grabber</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse>
+                        <Nav>
+                            <Nav.Link as={Link} to="/trackstreamlist" >List Streaming History</Nav.Link>
+                        </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </div>
         )
     }
 
     // Check that the server side is live
     async function checkServer() {
-        console.log("check server ready!");
         try {
             const response = await fetch('api/isserverready');
 
@@ -93,16 +109,17 @@ function UploadZip() {
             }
 
             setIsServerReady(true);
+            return true;
         }
         catch (error) {
             setIsServerReady(false);
-            console.log("Error populating track streams:", error);
+            console.log("Error checking server:", error);
+            return false;
         }
     }
 
     // Get the amount of track streams CURRENTLY in the DB
     async function getTeackStreamCount() {
-        console.log("get track stream count!");
         try {
             const response = await fetch('api/trackstream/gettrackstreamcount');
 
@@ -114,14 +131,14 @@ function UploadZip() {
             setCurrentTrackStreamCount(data);
         }
         catch (error) {
-            console.log("Error populating track streams:", error);
+            console.log("Error getting stream count:", error);
         }
     }
 
     // Populate the DB after zip is uploaded
     async function populateTrackStreams(zipFile) {
-        console.log("uploading zip!");
         try {
+            setPopulatingStreams(true);
             const response = await fetch('api/trackstream/loadtrackstreams', {
                 method: "POST",
                 body: zipFile,
@@ -133,6 +150,7 @@ function UploadZip() {
 
             const data = await response.json();
             setUploadedStreamsCount(data);
+            if (data != null) setPopulatingStreams(false);
         }
         catch (error) {
             console.log("Error populating track streams:", error);

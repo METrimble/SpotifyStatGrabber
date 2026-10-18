@@ -27,10 +27,7 @@ using (var scope = app.Services.CreateScope())
 	{
 		var context = services.GetRequiredService<SpotifyStatGrabberContext>();
 
-		// This checks if the file exists. If not, it creates the .db file and all tables.
-		//context.Database.EnsureCreated();
-
-		// ALTERNATIVE (If you are using EF Core Migrations):
+		// equivelent to: dotnet ef database update
 		context.Database.Migrate(); 
 	}
 	catch (Exception ex)
@@ -59,6 +56,7 @@ app.MapControllers();
 
 app.MapFallbackToFile("/index.html");
 
+// API to check if the server is ready to be used by the client
 app.MapGet("/api/isserverready", () =>
 {
 	// Checks to see when the server is live

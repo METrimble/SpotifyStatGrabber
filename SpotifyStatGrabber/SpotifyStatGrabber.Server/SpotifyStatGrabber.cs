@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 
 namespace SpotifyStatGrabber.Server
 {
+	// DB Context
 	public class SpotifyStatGrabberContext : DbContext
 	{
 		public DbSet<TrackStream>? TrackStreams { get; set; }
